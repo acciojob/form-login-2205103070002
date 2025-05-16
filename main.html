@@ -16,18 +16,17 @@
 
   <script>
     function getFormvalue(event) {
-      // Prevent the default form submission
+      
       event.preventDefault();
 
-      // Get form values and trim extra spaces
+      
       const firstName = document.forms["nameForm"]["fname"].value.trim();
       const lastName = document.forms["nameForm"]["lname"].value.trim();
 
-      // Display full name using alert
+    
       alert(`${firstName} ${lastName}`);
     }
 
-    // Attach the function to the form's submit event
     document.getElementById("nameForm").addEventListener("submit", getFormvalue);
   </script>
 </body>
